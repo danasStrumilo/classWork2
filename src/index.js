@@ -1,5 +1,6 @@
-import './assets/styles/app.scss';
+import './assets/styles/app.scss'
 import './index.hbs'
+import './profile.hbs'
 
 import './assets/images/menu-24px.svg'
 import './assets/images/more_horiz-24px.svg'
@@ -17,4 +18,11 @@ import './assets/images/green-circle.png'
 import './assets/images/orange-circle.png'
 import './assets/images/violet-circle.png'
 
+document.querySelector('[data-toggle]').addEventListener('click', function (event) {
+    event.preventDefault();
+    let element = event.target.dataset.toggle;
 
+    document.querySelectorAll('[data-' + element + ']').forEach(function (el) {
+        el.classList.toggle(element + '__hide');
+    })
+});

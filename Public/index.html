@@ -10,7 +10,7 @@
 <link href="assets/styles/app.css" rel="stylesheet"></head>
 
 <body>
-    <nav class="nav">
+    <nav data-sidenav class="nav sidenav__hide">
             <div class="nav__left">
                 <a href="#">
                     <img src="assets/images/offline_bolt-24px.svg" alt="Menu">
@@ -19,11 +19,11 @@
             </div>
             <div class="nav__right">
                 <div class="nav__right__menu">
-                    <img src="assets/images/menu-24px.svg" alt="Meniu">
+                    <img data-toggle="sidenav" src="assets/images/menu-24px.svg" alt="Meniu">
                     <div class="search-input">
                         <input type="text" />
                         <a href="#">
-                            <img src="assets/images/search-24px.svg" alt="Meniu">
+                            <img src="assets/images/search-24px.svg" alt="search">
                         </a>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>  	<nav class="sidenav">
+        </nav>  	<nav data-sidenav class="sidenav sidenav__hide">
   	        <div class="sidenav-divider">
   	            <h5 class="sidenav__title">Main</h5>
   	            <ul class="sidenav__list">
@@ -111,7 +111,7 @@
   	        </div>
   	        
   	    </nav>
-     <div class="container">
+     <div data-sidenav class="container sidenav__hide">
          <div class="minton-block">
              <p class="minton-block__welcome">Welcome</p>
              <ul>

@@ -1,0 +1,99 @@
+.nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: #3f51b5;
+    display: flex;
+    height: 70px;
+    top:0;
+    &__left {
+        max-width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        img {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        span {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: block;
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &__menu {
+            display: flex;
+            align-items: center;
+            img {
+                margin: 0 20px;
+                cursor: pointer;
+            }
+            .search-input {
+                position: relative;
+                > input {
+                    border: 1px solid rgba(255,255,255,0.1);
+                    background: rgba(255,255,255,0.1);
+                    color: #fff;
+                    padding: 6px 18px;
+                }
+                img {
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-right: 0;
+                }
+            }
+        }
+        &__list {
+            ul{
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                li {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 12px;
+                    line-height: 70px;
+                    a {
+                        display: block;
+                        img {
+                            overflow: hidden;
+                            vertical-align: middle;
+                            
+                        }
+                    }
+                }
+            }
+            .img-circle {
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.sidenav__hide {
+    .nav__left {
+       max-width: 10px;
+       display: none;
+       span {
+         display: none;  
+       }
+    }
+}

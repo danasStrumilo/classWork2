@@ -49,5 +49,10 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.hbs'
     }),
+    new HtmlWebpackPlugin({
+      title: 'profile',
+      filename: 'profile.html',
+      template: './src/profile.hbs'
+    }),
   ]
 };

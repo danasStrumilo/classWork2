@@ -1,4 +1,6 @@
 .sidenav {
+    display:flex;
+    flex-wrap: wrap;
     position: fixed;
     overflow: auto;
     left: 0;
@@ -6,6 +8,7 @@
     width: 240px;
     height: 100%;
     background: #fff;
+    overscroll-x: scroll;
     &.sidenav__hide {
         width: 100px;
         .sidenav__list {
@@ -45,6 +48,7 @@
         }
     }
     &__title {
+        margin-bottom: 20px;
         padding: 0 20px;
         color: rgba(58, 45, 45, 0.986);
         

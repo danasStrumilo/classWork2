@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{htmlWebpackPlugin.options.title}}</title>
     <link rel="stylesheet" href="assets/styles/app.css">
 </head>
 
@@ -13,7 +13,7 @@
     {{> partials/nav }}
   	{{> partials/sidenav }}
 
-     <div data-sidenav class="container sidenav__hide">
+     <div data-sidenav class="bg-block sidenav__hide">
          <div class="minton-block">
              <p class="minton-block__welcome">Welcome</p>
              <ul>
@@ -70,7 +70,7 @@
             <div class="third-block__bigger">
                 <h4>Latest Project</h4>
                 <p>You awesome! You text goes here.</p>
-                
+                <div class="table-responsive-md">
                 <table>
                     <tr>
                         <th>#</th>
@@ -121,6 +121,7 @@
                         <td>help meee</td>
                     </tr>
                 </table>
+                </div>
             </div>
 
             <div class="third-block__smaller">

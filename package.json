@@ -11,6 +11,7 @@
   "author": "Danas Strumilo",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
     "git": "^0.1.5",

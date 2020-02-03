@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+    <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+
+<body>
+    {{> partials/nav }}
+  	{{> partials/sidenav }}
+
+     <div data-sidenav class="container sidenav__hide">
+         <div class="minton-block">
+             <p class="minton-block__welcome">Welcome</p>
+             <ul>
+                 <li>minton</li>
+                 <li>extras</li>
+                 <li>profile</li>
+             </ul>
+         </div>
+
+        <div class="block-divider">
+            .
+        </div>
+
+     
+    </div>
+</body>
+
+</html>

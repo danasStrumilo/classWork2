@@ -2,6 +2,7 @@ import './assets/styles/app.scss'
 import './index.hbs'
 import './profile.hbs'
 
+
 import './assets/images/menu-24px.svg'
 import './assets/images/more_horiz-24px.svg'
 import './assets/images/notifications-24px.svg'
